@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The HTML5 Herald</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+  <section>
+    <img src="bg.jpg" id="bg">
+    <img src="sun.png" id="sun" style="width:400px;height:400px">
+    <img src="mountain.png" id="mountain">
+    <img src="roadv2.png" id="road">
+    <h2 id="text">Back On The Road</h2>
+
+  </section>
+
+    <script type="text/javascript">
+
+      let bg = document.getElementById("bg");
+      let sun = document.getElementById("sun");
+      let mountain = document.getElementById("mountain");
+      let road = document.getElementById("road");
+      let text = document.getElementById("text");
+
+      window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.5 + 'px';
+        sun.style.left = value * 0.5 + 'px';
+        mountain.style.top = value * 0.15 + 'px';
+        road.style.top = value * 0.15 + 'px';
+        text.style.top = value * 1 + 'px';
+
+      })
+
+
+
+
+    </script>
+
+
+
+ 
+</body>
+</html>
